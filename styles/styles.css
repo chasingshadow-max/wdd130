@@ -13,6 +13,7 @@
     --border-color: #000;
 }
 
+/* Navigation */
 nav {
     background-color: var(--primary-color);
     padding: 10px;
@@ -22,8 +23,10 @@ nav a {
     color: white;
     display: block;
     padding: 20px;
+    text-decoration: none;
 }
 
+/* Main Content */
 main {
     max-width: 840px;
 }
@@ -32,6 +35,7 @@ h1 {
     color: var(--primary-color);
 }
 
+/* Profile Image Float */
 main img {
     width: 150px;
     height: auto;
@@ -39,7 +43,6 @@ main img {
     padding: 2px;
     box-shadow: 0 0 30px gray;
     float: right;
-    /* Float profile image */
     margin: 0 0 1rem 1rem;
 }
 
@@ -47,31 +50,36 @@ p {
     padding: 0;
 }
 
-/* Aside container for absolute heading overlay */
+/* Aside Container (for overlay) */
 aside {
     width: 320px;
     background-color: var(--light-bg);
     color: var(--dark-text);
     text-align: center;
     position: relative;
-    /* REQUIRED for overlay */
+    overflow: hidden;
+    border-radius: 10px;
 }
 
-/* Overlay heading on image */
+/* Full-width */
+aside img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Heading overlay on image */
 aside h2 {
     position: absolute;
-    top: 47px;
-    left: 150px;
+    top: 15px;
+    left: 15px;
     background-color: rgba(0, 0, 0, 0.6);
     color: white;
-    padding: 0.3rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
 }
 
-aside img {
-    width: 200px;
-    height: auto;
-}
-
+/* Footer */
 footer {
     margin-top: 15px;
     border-top: 1px solid var(--border-color);
@@ -79,7 +87,6 @@ footer {
 }
 
 /* Class Selectors */
-
 .box {
     margin: 1rem;
     padding: 1rem;
