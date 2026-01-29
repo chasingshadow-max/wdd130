@@ -1,0 +1,108 @@
+/* VARIABLES */
+:root {
+    --primary-color: #3282b8;
+    /* Main blue color */
+    --secondary-color: #bbe1fa;
+    /* Light sky blue */
+    --accent1-color: #1b262c;
+    /* Dark navy */
+    --accent2-color: #333;
+    /* Dark gray */
+
+    --heading-font: "Times New Roman", Georgia, serif;
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+}
+
+/* PAGE WIDTH */
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+/* HEADINGS */
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+/* BASIC SPACING */
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+/* HEADER COLOR */
+header {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* HERO CONTAINER */
+.hero {
+    position: relative;
+}
+
+/* HERO IMAGE */
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* HERO TITLE OVERLAY BAR */
+h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--accent1-color);
+    color: #fff;
+}
+
+/* HERO ARTICLE OVERLAY BOX */
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: var(--accent1-color);
+    color: white;
+    opacity: 0.8;
+    padding: 16px;
+}
+
+/* FLOAT IMAGE INSIDE ARTICLE */
+.hero article img {
+    float: right;
+    width: 125px;
+}
+
+/* REMOVE LINK UNDERLINE FOR SOCIAL ICONS */
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 30px;
+    margin: 5px;
+}
