@@ -1,4 +1,4 @@
-/* VARIABLES */
+/* root selector */
 :root {
     --primary-color: #3282b8;
     /* Main blue color */
@@ -53,7 +53,7 @@ article {
 /* HEADER COLOR */
 header {
     background-color: var(--primary-color);
-    color: white;
+    color: var(--accent2-color);
 }
 
 /* HERO CONTAINER */
@@ -86,7 +86,7 @@ h1 {
     bottom: 20px;
     left: 20px;
     background-color: var(--accent1-color);
-    color: white;
+    color: var(--secondary-color);
     opacity: 0.8;
     padding: 16px;
 }
